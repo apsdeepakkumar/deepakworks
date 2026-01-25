@@ -1,5 +1,5 @@
 import { ArrowDown, Cloud, Server, GitBranch } from 'lucide-react';
-import profileImage from '@/assets/deepak-profile.jpg';
+import profileImage from '@/assets/deepak-profile.png';
 
 const Hero = () => {
   return (
@@ -75,8 +75,8 @@ const Hero = () => {
 
             {/* Profile Image */}
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent rounded-3xl blur-2xl transform scale-110" />
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden gradient-border glow-effect">
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent rounded-full blur-2xl transform scale-110" />
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden gradient-border glow-effect">
                 <img
                   src={profileImage}
                   alt="Deepak Kumar"
