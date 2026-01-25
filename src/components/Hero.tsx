@@ -76,11 +76,11 @@ const Hero = () => {
             {/* Profile Image */}
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent rounded-full blur-2xl transform scale-110" />
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden gradient-border glow-effect">
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden gradient-border glow-effect p-3">
                 <img
                   src={profileImage}
                   alt="Deepak Kumar"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
             </div>
