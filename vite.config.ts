@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-swc';
 
 export default defineConfig({
   plugins: [react()],
-  base: './',      // important for Netlify
+  base: './', // important for Netlify
   build: {
-    outDir: 'dist' // default folder to publish
-  }
+    outDir: 'dist',
+  },
 });
