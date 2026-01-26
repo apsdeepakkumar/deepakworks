@@ -1,8 +1,6 @@
 import { FileDown, Briefcase, GraduationCap, Award, Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react';
-
 const Resume = () => {
-  return (
-    <section id="resume" className="py-20 md:py-32">
+  return <section id="resume" className="py-20 md:py-32">
       <div className="section-container">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -28,20 +26,17 @@ const Resume = () => {
             <h3 className="text-3xl font-bold gradient-text mb-2">Deepak Kumar</h3>
             <p className="text-xl text-primary font-medium mb-4">DevOps Engineer</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-              <a href="tel:+918235387498" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Phone className="w-4 h-4" />
+              <a href="tel:+918235387498" className="flex items-center gap-2 hover:text-primary transition-colors">+91-9120088883<Phone className="w-4 h-4" />
                 +91-8235387498
               </a>
-              <a href="mailto:deepakkumar829371@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Mail className="w-4 h-4" />
+              <a href="mailto:deepakkumar829371@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">apsdeepakkumar270501@gmail.com<Mail className="w-4 h-4" />
                 deepakkumar829371@gmail.com
               </a>
-              <a href="https://linkedin.com/in/deepak-kumar-cloud" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Linkedin className="w-4 h-4" />
+              <a href="https://linkedin.com/in/deepak-kumar-cloud" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">LinkedIn<Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
               <a href="https://github.com/deepak829" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Github className="w-4 h-4" />
+              <Github className="w-4 h-4" />
                 GitHub
               </a>
             </div>
@@ -76,8 +71,7 @@ const Resume = () => {
                 <h5 className="text-lg font-semibold text-foreground">DevOps Engineer</h5>
                 <span className="text-sm text-primary font-medium">Feb 2023 - Present</span>
               </div>
-              <p className="text-muted-foreground font-medium mb-3 flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
+              <p className="text-muted-foreground font-medium mb-3 flex items-center gap-2">Sigtuple Technology private limited<MapPin className="w-4 h-4" />
                 Quantela Inc
               </p>
               <ul className="text-muted-foreground space-y-2 list-disc list-inside">
@@ -146,27 +140,24 @@ const Resume = () => {
 
           {/* Certifications */}
           <div>
-            <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+            <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">Certifications
+      ● DevOps MasterClass - GIT Docker Jenkins Kubernetes Terraform - Udemy - Ongoing
+      ● Modern big Data Analysis with SQL specialization
+      ● Programming Using c++ (CipherSchools)
+      ● Python for Everyday Specialization
+
+            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                 <Award className="w-4 h-4 text-primary" />
               </div>
               Certifications
             </h4>
-            <div className="flex flex-wrap gap-3">
-              <span className="skill-tag">GCP Associate Cloud Engineer</span>
-              <span className="skill-tag">HashiCorp Certified: Terraform Associate</span>
-              <span className="skill-tag">Certified Kubernetes Administrator (CKA)</span>
-            </div>
+            
           </div>
         </div>
 
         {/* Download Button */}
         <div className="text-center">
-          <a
-            href="/resume/Deepak_kumar_Resume.pdf"
-            download="Deepak_kumar_Resume.pdf"
-            className="btn-primary inline-flex items-center gap-3"
-          >
+          <a href="/resume/Deepak_kumar_Resume.pdf" download="Deepak_kumar_Resume.pdf" className="btn-primary inline-flex items-center gap-3">
             <FileDown className="w-5 h-5" />
             Download Resume PDF
           </a>
@@ -175,8 +166,6 @@ const Resume = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Resume;
