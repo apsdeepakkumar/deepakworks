@@ -3,14 +3,11 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
+  base: "./", // relative paths work for Netlify
   plugins: [react()],
-  base: "./", // important for Netlify so assets work
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src") // <- makes @/ point to src/
+      "@": path.resolve(__dirname, "./src"),
     },
-  },
-  build: {
-    outDir: "dist",
   },
 });
