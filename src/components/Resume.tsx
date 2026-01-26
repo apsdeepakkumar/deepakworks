@@ -26,16 +26,16 @@ const Resume = () => {
             <h3 className="text-3xl font-bold gradient-text mb-2">Deepak Kumar</h3>
             <p className="text-xl text-primary font-medium mb-4">DevOps Engineer</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-              <a href="tel:+918235387498" className="flex items-center gap-2 hover:text-primary transition-colors">+91-9120088883<Phone className="w-4 h-4" />
-                +91-8235387498
+              <a href="tel:+9120088883" className="flex items-center gap-2 hover:text-primary transition-colors">+91-9120088883<Phone className="w-4 h-4" />
+                +91-9120088883
               </a>
-              <a href="mailto:deepakkumar829371@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">apsdeepakkumar270501@gmail.com<Mail className="w-4 h-4" />
-                deepakkumar829371@gmail.com
+              <a href="mailto:apsdeepakkumar270501@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">apsdeepakkumar270501@gmail.com<Mail className="w-4 h-4" />
+                apsdeepakkumar270501@gmail.com
               </a>
-              <a href="https://linkedin.com/in/deepak-kumar-cloud" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">LinkedIn<Linkedin className="w-4 h-4" />
+              <a href="https://www.linkedin.com/in/apsdeepak/ target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">LinkedIn<Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
-              <a href="https://github.com/deepak829" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="https://github.com/apsdeepakkumar" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Github className="w-4 h-4" />
                 GitHub
               </a>
@@ -141,10 +141,10 @@ const Resume = () => {
           {/* Certifications */}
           <div>
             <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">Certifications
-      ● DevOps MasterClass - GIT Docker Jenkins Kubernetes Terraform - Udemy - Ongoing
-      ● Modern big Data Analysis with SQL specialization
-      ● Programming Using c++ (CipherSchools)
-      ● Python for Everyday Specialization
+              ● DevOps MasterClass - GIT Docker Jenkins Kubernetes Terraform - Udemy - Ongoing
+              ● Modern big Data Analysis with SQL specialization
+              ● Programming Using c++ (CipherSchools)
+              ● Python for Everyday Specialization
 
             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                 <Award className="w-4 h-4 text-primary" />
