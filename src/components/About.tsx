@@ -1,8 +1,6 @@
 import { GraduationCap, Briefcase, MapPin } from 'lucide-react';
-
 const About = () => {
-  return (
-    <section id="about" className="py-24 relative">
+  return <section id="about" className="py-24 relative">
       <div className="section-container">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -18,12 +16,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Bio */}
           <div className="space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate DevOps Engineer with over 3 years of experience in building 
-              and managing cloud-native infrastructure. Currently at Sigtuple Technologies, 
-              I specialize in designing production-grade GCP infrastructure that powers 
-              mission-critical healthcare applications.
-            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">I'm a passionate DevOps Engineer with over 3+ years of experience in building and managing cloud-native infrastructure. Currently at Sigtuple Technologies, I specialize in designing production-grade GCP infrastructure that powers mission-critical healthcare applications.</p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               My expertise spans the full DevOps spectrum—from containerization with Docker 
               and Kubernetes to implementing robust CI/CD pipelines with Jenkins, CircleCI, 
@@ -32,7 +25,8 @@ const About = () => {
             </p>
             <div className="flex items-center gap-3 text-muted-foreground">
               <MapPin size={18} className="text-primary" />
-              <span>India • Available for Remote Work</span>
+              <span>Location: India
+Work Preference: Remote · On-site · Hybrid</span>
             </div>
           </div>
 
@@ -84,8 +78,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
