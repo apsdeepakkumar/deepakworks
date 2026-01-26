@@ -1,4 +1,4 @@
-import { FileDown, Award, GraduationCap, Cloud, GitBranch } from 'lucide-react';
+import { FileDown, Award, GraduationCap, Cloud, GitBranch, ExternalLink, FileText } from 'lucide-react';
 
 const highlights = [
   {
@@ -60,17 +60,27 @@ const Resume = () => {
           ))}
         </div>
 
-        {/* Resume Preview & Download */}
+        {/* Resume Card & Download */}
         <div className="glass-card rounded-2xl p-8 md:p-12">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
-            {/* PDF Preview */}
-            <div className="flex-1 w-full">
-              <div className="aspect-[8.5/11] w-full max-w-md mx-auto rounded-xl overflow-hidden border border-border/50 bg-secondary/30">
-                <iframe
-                  src="/resume/Deepak_kumar_Resume.pdf"
-                  className="w-full h-full"
-                  title="Resume Preview"
-                />
+            {/* Resume Preview Card */}
+            <div className="flex-1 w-full max-w-md mx-auto">
+              <div className="aspect-[8.5/11] w-full rounded-xl border border-border/50 bg-gradient-to-br from-secondary/50 to-secondary/30 flex flex-col items-center justify-center p-8 text-center">
+                <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <FileText className="w-10 h-10 text-primary" />
+                </div>
+                <h4 className="text-xl font-bold text-foreground mb-2">Deepak Kumar</h4>
+                <p className="text-muted-foreground mb-4">DevOps Engineer Resume</p>
+                <p className="text-sm text-muted-foreground mb-6">PDF Document</p>
+                <a
+                  href="/resume/Deepak_kumar_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline text-sm inline-flex items-center gap-2"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  View in New Tab
+                </a>
               </div>
             </div>
 
