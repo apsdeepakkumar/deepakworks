@@ -32,7 +32,7 @@ const Resume = () => {
               <a href="mailto:apsdeepakkumar270501@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">apsdeepakkumar270501@gmail.com<Mail className="w-4 h-4" />
                 apsdeepakkumar270501@gmail.com
               </a>
-              <a href="https://www.linkedin.com/in/apsdeepak/ target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">LinkedIn<Linkedin className="w-4 h-4" />
+              <a href="https://www.linkedin.com/in/apsdeepak/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">LinkedIn<Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
               <a href="https://github.com/apsdeepakkumar" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
