@@ -4,10 +4,10 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // ensures assets work on Netlify
+  base: "./", // important for Netlify so assets work
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src") // <-- crucial for Netlify
+      "@": path.resolve(__dirname, "src") // <- makes @/ point to src/
     },
   },
   build: {
