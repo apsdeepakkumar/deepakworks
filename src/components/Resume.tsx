@@ -1,6 +1,23 @@
 import { FileDown, Briefcase, GraduationCap, Award, Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react';
 
 const Resume = () => {
+  const handleDownload = async () => {
+    try {
+      const response = await fetch('/resume/Deepak_kumar_Resume.pdf');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Deepak_kumar_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      window.open('/resume/Deepak_kumar_Resume.pdf', '_blank');
+    }
+  };
+
   return (
     <section id="resume" className="py-20 md:py-32">
       <div className="section-container">
@@ -131,7 +148,7 @@ const Resume = () => {
               </div>
               <div className="glass-card rounded-xl p-4">
                 <h6 className="font-medium text-foreground mb-2">Infrastructure as Code</h6>
-                <p className="text-sm text-muted-foreground">Terraform, Ansible, CloudFormation</p>
+                <p className="text-sm text-muted-foreground">Terraform, Ansible, CloudFormation, Terraform Cloud</p>
               </div>
               <div className="glass-card rounded-xl p-4">
                 <h6 className="font-medium text-foreground mb-2">Scripting & Programming</h6>
@@ -162,14 +179,13 @@ const Resume = () => {
 
         {/* Download Button */}
         <div className="text-center">
-          <a
-            href="/resume/Deepak_kumar_Resume.pdf"
-            download="Deepak_kumar_Resume.pdf"
+          <button
+            onClick={handleDownload}
             className="btn-primary inline-flex items-center gap-3"
           >
             <FileDown className="w-5 h-5" />
             Download Resume PDF
-          </a>
+          </button>
           <p className="text-sm text-muted-foreground mt-4">
             PDF format • Updated 2024
           </p>
